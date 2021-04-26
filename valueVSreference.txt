@@ -1,0 +1,30 @@
+*copy by reference:
+     ->Objects in JS are stored and copied by reference,ie) whenever an object is assigned 
+to a variable , the variable does not copies or stores the object itself instead the 
+address of the memory which holds the object is assigned to the variable.also for an object
+to be equal to another object, the another object should be the same object;ie)the variables
+which being compared to be equal should point the same object.there can be multiples of
+variables which points to the same object.copying the objects means copying the address of
+the memory location of the object shortly known as reference.
+eg)
+                var a=[1,2,3];
+                var b=a;
+                console.log(a); //prints [1,2,3]
+                b.push(4);
+                console.log(a); //prints [1,2,3,4]
+                console.log(b); //prints [1,2,3,4]
+
+*copy by value:
+      ->Primitive data types can be stored and copied by value,ie) the primitive values
+which are assigned to a variables are stored in the variables, which can be accessed as a 
+whole value through the variables itself.whenever two variables are compared for equality
+the variables should contain the same value to be consider as a equal. while copying the
+primitive values, the values are copied on the whole. hence the name copy by value. 
+eg) 
+                var a1=5;
+                var b1=a;
+                b1=10;
+                console.log(a1); //prints 5
+                console.log(b1); //prints 10
+
+                

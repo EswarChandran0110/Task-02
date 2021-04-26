@@ -1,0 +1,12 @@
+*copy by value a composite datatype:
+                 ->Every array or object is copied by reference in JS, but they can also be
+copied by value on the application of SPREAD OPERATOR(...).what spread operator will do is it 
+will separate an array elements to individual elements and again it will arrange the individual
+elements into an array assiged to a variable.in that way the two variables will be pointing to
+two diff arrays or objects.
+eg)
+              var array1=[1,2,3];
+              var array2=[...array1]; 
+              array2.push(2);
+              console.log(array1) //prints [1,2,3]
+              console.log(array2) //prints [1,2,3,2]
